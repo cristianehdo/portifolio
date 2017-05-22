@@ -1,5 +1,10 @@
 body {
   color: #666;
+  background-color:  rgba(173, 141, 44, 0.46);
+}
+div#content {
+  margin: 0 auto;
+  width: 100%;
 }
 div#navbar {
   margin: 0 auto;
@@ -34,27 +39,36 @@ li a:hover {
 
 div#presentation {
   margin: 0 auto;
-  width: 1030px;
-  height: 455px;
+  width: 50%;
+  height: 53%;
   padding: 100px 10px 30px 70px;
   background-color: #d3dee0;
   color: #666;
+  position: relative;
+  left: -26%;
+  top: 100px;
   }
-.imagecircle{
+.imageCircle{
+  width: 100%;
   border-radius: 50%;
+  
 }
 div#portifolio{
   color: #666;
   margin: 0 auto;
-  width: 950px;
-  height: 115px;
-  padding: 70px 0px 30px 0px;
+  width: 54%;
+  height: 13%;
+  padding: 2% 0px 1% 0px;
+  text-align: right;
+  position: relative;
 }
 div#portifolioimages{
   margin: 0 auto;
-  width: 784px;
-  height: 921px;
-  padding: 70px 0px 0px 0px;
+  width: 79%;
+  height: 98%;
+  padding: 2% 0px 0px 0px;
+  position: relative;
+  right: -23%;
 }
 div#contact{
   margin: 0 auto;
@@ -75,7 +89,7 @@ div#contactform{
  background-color: #f2f2f2;
  padding: 20px;
  width: 700px; 
- height: 650px;
+ height: 678px;
  color: #666;
 }
 input[type=text], select, textarea {
@@ -106,4 +120,10 @@ ul#socialnetwork {
   margin: 0 auto;
   width: 340px;
   padding: 0px;
+}
+
+
+.img-center {
+  margin:0 auto;
+  width: 63%;
 }
