@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <script type="application/javascript" src="static/js/script.js"></script> -->
   <script src="static/js/jquery-3.2.1.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
   <link href="static/css/bootstrap.css" rel="stylesheet">
   <link href="static/css/css.css" rel="stylesheet">
   <div id= navbar>
@@ -14,22 +14,20 @@
   </div>
 </head>  
 <body>
-<div id="content" >
+  <div id="content" >
     <div id="presentation">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="text-center">Front End Developer</h3><br><br>
-          <h4>Front-End Developer with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</h4>
-        </div>
-        <div class="col-md-4" id="imageCircle">
-          <img class="imageCircle img-responsive" src="static/images/cristiane.jpg" alt="Cristiane Helena de Oliveira e sua bicicleta">  
-        </div>
+      <div id="textPresentation">
+        <h3 class="text-center">Front End Developer</h3><br><br>
+        <h4>Front-End Developer with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</h4>
       </div>
-    </div> 
+      <div id="imageCircle">
+        <img class="imageCircle img-responsive" src="static/images/cristiane.jpg" alt="Cristiane Helena de Oliveira e sua bicicleta">  
+      </div>
+    </div>
     <div id="portifolio">
       <h1>Portifolio</h1>
     </div>
-    <div id="portifolioimages">
+    <div id="portifolioImages">
      <div class="row">
         <div class="col-xs-6">
            <div>
@@ -81,7 +79,7 @@
               <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfQImHbdIAjzlRRsiyq2RmKlWd2ZZK0Nq1JYbEHVEhns2mN0w/exec">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
-                <label for="e-mail">E-mail</label>
+                <label for="e-mail">E-mail</label><label id="email-invalid"> Please entry a valid e-mail!</label>
                 <input type="text" id="e-mail" name="e-mail">
                 <label for="Company">Company</label>
                 <input type="text" id="company" name="company">
@@ -98,32 +96,31 @@
             </h4>  
           </div>   
      </div>      
-  </div>   
-  <div id="footer">
-    <div class="row">
-      <div class="col-md-6">
-        <h3 class="text-center">About this page</h3>
-        <h6 id="footer2" class="text-center">Made by me. My project number 2 :)</h6>
+    </div>   
+    <div id="footer">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center">About this page</h3>
+          <h6 id="footer2" class="text-center">Made by me. My project number 2 :)</h6>
+        </div>
+        <div class="col-md-6 text-center">
+          <h3>Around the web</h3>
+            <ul id="socialnetwork">
+              <li>
+                <a href="https://www.instagram.com/cristiane.hdo/" target="blank"><i class="fa fa-instagram fa-1x" style="color: white;" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/cristianedeoliveira" target="blank"><i class="fa fa-facebook-official fa-1x" style="color: white;" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/cristianehdo" target="blank">
+                <i class="fa fa-github fa-1x" style="color: white;" aria-hidden="true"></i></a>
+              </li>  
+        </div>  
       </div>
-      <div class="col-md-6 text-center">
-        <h3>Around the web</h3>
-          <ul id="socialnetwork">
-            <li>
-              <a href="https://www.instagram.com/cristiane.hdo/" target="blank"><i class="fa fa-instagram fa-1x"style="color: white;" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/cristianedeoliveira" target="blank"><i class="fa fa-facebook-official fa-1x"style="color: white;" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/cristianehdo" target="blank">
-              <i class="fa fa-github fa-1x"style="color: white;" aria-hidden="true"></i></a>
-            </li>  
-      </div>  
-    </div>
-  </div>  
-</div>
-<script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    </div>  
+  </div>
+<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 
 </body>
