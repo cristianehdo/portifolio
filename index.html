@@ -1,6 +1,6 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <script type="application/javascript" src="static/js/script.js"></script> -->
+  <script type="application/javascript" src="static/js/script.js"></script>
   <script src="static/js/jquery-3.2.1.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
   <link href="static/css/bootstrap.css" rel="stylesheet">
@@ -76,11 +76,14 @@
         <div class="row">
           <div class="col-md-8">  
             <div id="contactform">
-              <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfQImHbdIAjzlRRsiyq2RmKlWd2ZZK0Nq1JYbEHVEhns2mN0w/exec">
+              <div  id="thankyou_message" class="popup" onclick="thankMessage()">
+                <span>Thank you. I will respond to your message as soon as possible!</span>
+              </div>
+              <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfQImHbdIAjzlRRsiyq2RmKlWd2ZZK0Nq1JYbEHVEhns2mN0w/exec">  
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
-                <label for="e-mail">E-mail</label><label id="email-invalid"> Please entry a valid e-mail!</label>
-                <input type="text" id="e-mail" name="e-mail">
+                <label for="email">E-mail</label><label id="email-invalid"> Please entry a valid e-mail!</label>
+                <input type="text" id="email" name="email">
                 <label for="Company">Company</label>
                 <input type="text" id="company" name="company">
                 <label for="country">Country</label>
@@ -91,10 +94,10 @@
               </form>
             </div>
         </div> 
-          <div class="col-md-4"> 
-            <h4>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
-            </h4>  
-          </div>   
+        <div class="col-md-4"> 
+          <h4>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+          </h4>  
+        </div>   
      </div>      
     </div>   
     <div id="footer">

@@ -146,3 +146,8 @@ label#email-invalid {
   display: none;
   color: red;
 }
+.popup {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
